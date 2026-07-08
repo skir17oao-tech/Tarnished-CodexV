@@ -1,0 +1,591 @@
+body {
+
+background:#050505;
+
+color:white;
+
+font-family:Arial, sans-serif;
+
+text-align:center;
+
+}
+
+
+:root {
+
+--vig:#ff0000;
+--min:#8000ff;
+--end:#00ff44;
+--str:#dc143c;
+--dex:#003cff;
+--int:#66ccff;
+--fai:#ff9900;
+--arc:#ffd700;
+
+}
+
+
+
+.codex {
+
+width:900px;
+
+margin:auto;
+
+}
+
+
+
+h1 {
+
+font-size:32px;
+
+letter-spacing:5px;
+
+text-shadow:0 0 15px red;
+
+}
+
+
+
+#nameInput {
+
+background:#111;
+
+color:white;
+
+border:1px solid red;
+
+padding:10px;
+
+font-size:18px;
+
+text-align:center;
+
+margin-bottom:10px;
+
+}
+
+
+
+#rank {
+
+color:red;
+
+font-size:28px;
+
+letter-spacing:4px;
+
+margin-bottom:70px;
+
+}
+
+
+
+.ability {
+
+position:relative;
+
+width:600px;
+
+height:600px;
+
+margin:auto;
+
+}
+
+
+
+#chart {
+
+position:absolute;
+
+width:500px !important;
+
+height:500px !important;
+
+left:50px;
+
+top:50px;
+
+}
+
+
+
+.rating {
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-57%);
+
+z-index:5;
+
+}
+
+
+
+#rating {
+
+font-size:45px;
+
+font-weight:bold;
+
+color:red;
+
+text-shadow:0 0 20px red;
+
+}
+
+
+
+.icon {
+
+position:absolute;
+
+width:65px;
+
+height:65px;
+
+border:2px solid white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+opacity:0;
+
+transition:.5s;
+
+z-index:10;
+
+box-shadow:0 0 15px white;
+
+}
+
+
+
+.icon svg {
+
+width:70%;
+
+height:70%;
+
+display:block;
+
+}
+
+
+
+.vig {
+
+color:var(--vig);
+
+}
+
+
+.min {
+
+color:var(--min);
+
+}
+
+
+.end {
+
+color:var(--end);
+
+}
+
+
+.str {
+
+color:var(--str);
+
+}
+
+
+.dex {
+
+color:var(--dex);
+
+}
+
+
+.int {
+
+color:var(--int);
+
+}
+
+
+.fai {
+
+color:var(--fai);
+
+}
+
+
+.arc {
+
+color:var(--arc);
+
+}
+
+
+
+.mastered {
+
+animation:pulse 1.5s infinite;
+
+}
+
+
+
+@keyframes pulse {
+
+50% {
+
+box-shadow:0 0 35px currentColor;
+
+}
+
+}
+
+
+
+/* ICON POSITIONS */
+
+
+.vig {
+
+top:-30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+
+
+.min {
+
+top:40px;
+
+right:-30px;
+
+}
+
+
+
+.end {
+
+top:250px;
+
+right:-60px;
+
+}
+
+
+
+.str {
+
+bottom:40px;
+
+right:-30px;
+
+}
+
+
+
+.dex {
+
+bottom:-30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+
+
+.int {
+
+bottom:40px;
+
+left:-30px;
+
+}
+
+
+
+.fai {
+
+top:250px;
+
+left:-60px;
+
+}
+
+
+
+.arc {
+
+top:40px;
+
+left:-30px;
+
+}
+
+
+
+#level {
+
+margin-top:70px;
+
+color:#aaa;
+
+letter-spacing:3px;
+
+}
+
+
+
+#stats {
+
+margin-top:30px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+
+
+.stat {
+
+font-size:24px;
+
+font-weight:bold;
+
+}
+
+
+
+button {
+
+background:#111;
+
+color:white;
+
+border:1px solid red;
+
+width:40px;
+
+height:35px;
+
+font-size:20px;
+
+}
+
+/* CLASS SELECT */
+
+#classSelect {
+
+position:absolute;
+
+top:20px;
+
+left:20px;
+
+background:#050505;
+
+color:#ff0000;
+
+border:1px solid #ff0000;
+
+padding:10px 15px;
+
+font-size:16px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+
+font-family:Arial, sans-serif;
+
+cursor:pointer;
+
+box-shadow:
+0 0 10px rgba(255,0,0,.5);
+
+transition:.3s;
+
+}
+
+
+#classSelect:hover {
+
+box-shadow:
+0 0 25px red;
+
+}
+
+
+#classSelect option {
+
+background:#050505;
+
+color:#ff0000;
+
+font-weight:bold;
+
+}
+
+#characterPreview{
+
+width:150px;
+
+height:150px;
+
+object-fit:cover;
+
+border:2px solid red;
+
+display:block;
+
+margin:20px auto;
+
+box-shadow:0 0 15px red;
+
+}
+
+.topBar{
+
+display:flex;
+
+width:100%;
+
+justify-content:space-between;
+
+}
+
+
+#saveCard{
+
+margin-left:auto;
+
+}
+
+
+#saveCard,
+#classSelect{
+
+background:#050505;
+
+color:red;
+
+border:1px solid red;
+
+padding:10px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.characterBox{
+
+text-align:center;
+
+margin:20px;
+
+}
+
+
+
+#characterPreview{
+
+width:150px;
+
+height:150px;
+
+object-fit:cover;
+
+border:2px solid red;
+
+box-shadow:0 0 15px red;
+
+display:block;
+
+margin:15px auto;
+
+}
+
+
+
+.characterBox label{
+
+display:inline-block;
+
+background:#050505;
+
+color:red;
+
+border:1px solid red;
+
+padding:8px 15px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+
+
+
+#characterImage{
+
+display:none;
+
+}
+
+#exportCard{
+
+background:black;
+
+color:white;
+
+width:700px;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+
+#exportImage{
+
+width:200px;
+
+height:200px;
+
+object-fit:cover;
+
+border:2px solid red;
+
+}

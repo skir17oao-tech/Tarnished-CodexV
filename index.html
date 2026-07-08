@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>The Tarnished Codex</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="codex">
+
+
+<div class="topBar">
+
+
+<select id="classSelect">
+
+<option value="samurai">Samurai</option>
+<option value="vagabond">Vagabond</option>
+<option value="hero">Hero</option>
+<option value="warrior">Warrior</option>
+<option value="astrologer">Astrologer</option>
+<option value="prophet">Prophet</option>
+<option value="bandit">Bandit</option>
+<option value="confessor">Confessor</option>
+<option value="wretch">Wretch</option>
+
+</select>
+
+
+</div>
+
+
+
+<h1>THE TARNISHED CODEX</h1>
+
+
+
+<input id="nameInput" placeholder="Enter Tarnished Name">
+
+
+
+<div class="characterBox">
+
+
+<img id="characterPreview">
+
+
+<label for="characterImage">
+
+CHOOSE TARNISHED IMAGE
+
+</label>
+
+
+<input 
+type="file" 
+id="characterImage"
+accept="image/*">
+
+
+</div>
+
+
+
+
+<h2 id="rank"></h2>
+
+
+
+<div class="ability">
+
+
+
+<div class="icon vig" id="icon0">
+<img src="icons/vig.svg">
+</div>
+
+
+<div class="icon min" id="icon1">
+<img src="icons/min.svg">
+</div>
+
+
+<div class="icon end" id="icon2">
+<img src="icons/end.svg">
+</div>
+
+
+<div class="icon str" id="icon3">
+<img src="icons/str.svg">
+</div>
+
+
+<div class="icon dex" id="icon4">
+<img src="icons/dex.svg">
+</div>
+
+
+<div class="icon int" id="icon5">
+<img src="icons/int.svg">
+</div>
+
+
+<div class="icon fai" id="icon6">
+<img src="icons/fai.svg">
+</div>
+
+
+<div class="icon arc" id="icon7">
+<img src="icons/arc.svg">
+</div>
+
+
+
+
+
+<div class="rating">
+
+<div id="rating"></div>
+
+</div>
+
+
+
+<canvas id="chart"></canvas>
+
+
+
+</div>
+
+
+
+<h2 id="level"></h2>
+
+
+<h2 id="build"></h2>
+
+
+
+<div id="stats"></div>
+
+
+
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

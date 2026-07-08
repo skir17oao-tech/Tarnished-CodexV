@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+<!-- dragon eye shape -->
+<path d="
+M15 50
+C35 20 65 20 85 50
+C65 80 35 80 15 50Z"
+fill="none"
+stroke="currentColor"
+stroke-width="7"
+stroke-linejoin="round"/>
+
+<!-- dragon pupil -->
+<ellipse cx="50" cy="50" rx="10" ry="18"
+fill="none"
+stroke="currentColor"
+stroke-width="6"/>
+
+<!-- slit -->
+<path d="
+M50 35V65"
+stroke="currentColor"
+stroke-width="5"
+stroke-linecap="round"/>
+
+<!-- small horn details -->
+<path d="
+M25 35L15 25
+M75 35L85 25"
+stroke="currentColor"
+stroke-width="5"
+stroke-linecap="round"/>
+
+</svg>

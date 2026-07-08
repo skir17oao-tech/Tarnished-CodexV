@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+<path d="
+M20 25
+L35 10
+L50 25
+L65 10
+L80 25
+L70 70
+L50 88
+L30 70Z"
+fill="none"
+stroke="currentColor"
+stroke-width="7"
+stroke-linejoin="round"/>
+
+<circle cx="38" cy="45" r="5" fill="white"/>
+<circle cx="62" cy="45" r="5" fill="white"/>
+
+<path d="M40 65L50 72L60 65"
+fill="none"
+stroke="currentColor"
+stroke-width="6"/>
+
+</svg>

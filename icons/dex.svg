@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+<!-- dagger blade -->
+<path d="
+M50 10
+L65 60
+L50 85
+L35 60
+Z"
+fill="none"
+stroke="currentColor"
+stroke-width="7"
+stroke-linejoin="round"/>
+
+<!-- guard -->
+<path d="
+M25 60H75"
+stroke="currentColor"
+stroke-width="7"
+stroke-linecap="round"/>
+
+<!-- handle -->
+<path d="
+M50 60V88"
+stroke="currentColor"
+stroke-width="7"
+stroke-linecap="round"/>
+
+</svg>
