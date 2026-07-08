@@ -455,12 +455,12 @@ box.innerHTML+=`
 onclick="change(${i},-1)"
 onmousedown="startHold(${i},-1)"
 onmouseup="stopHold()"
-onmouseleave="stopHold">
+ontouchstart="startHold(${i},-1)"
+ontouchend="stopHold()">
 
 -
 
 </button>
-
 
 ${names[i]} : ${x}
 
@@ -469,12 +469,12 @@ ${names[i]} : ${x}
 onclick="change(${i},1)"
 onmousedown="startHold(${i},1)"
 onmouseup="stopHold()"
-onmouseleave="stopHold">
+ontouchstart="startHold(${i},1)"
+ontouchend="stopHold()">
 
 +
 
 </button>
-
 
 </div>
 
